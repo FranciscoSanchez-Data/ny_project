@@ -1,0 +1,10 @@
+certifi==2026.4.22
+charset-normalizer==3.4.7
+delta-spark==3.1.0
+idna==3.13
+importlib_metadata==9.0.0
+py4j==0.10.9.7
+pyspark==3.5.1
+requests==2.31.0
+urllib3==2.6.3
+zipp==3.23.1

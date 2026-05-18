@@ -1,0 +1,19 @@
+# Entorno Virtual
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Datos Locales (¡Crucial!)
+data/
+dbt/*.duckdb
+dbt/target/
+dbt/dbt_packages/
+
+# Apache Airflow (Guardamos los DAGs, ignoramos la base de datos interna y los logs)
+airflow/airflow.db
+airflow/airflow-webserver.pid
+airflow/logs/
+airflow/*.cfg
+airflow/*.txt
+!airflow/dags/

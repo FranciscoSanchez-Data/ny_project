@@ -1,0 +1,10 @@
+nyc_mobility:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      # Esto creará un archivo ligero en la raíz de dbt para cachear datos
+      path: local_lakehouse.duckdb 
+      extensions:
+        - delta
+        - parquet

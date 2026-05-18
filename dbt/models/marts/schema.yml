@@ -1,0 +1,16 @@
+# models/marts/schema.yml
+version: 2
+
+models:
+  - name: gold_daily_revenue
+    description: "Data mart diario con KPIs de revenue y operación para los taxis amarillos de NYC en 2023."
+    columns:
+      - name: pickup_date
+        description: "Fecha del viaje (YYYY-MM-DD)."
+        tests:
+          - unique
+          - not_null
+      - name: total_trips
+        description: "Número total de viajes válidos en el día."
+        tests:
+          - not_null
